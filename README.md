@@ -30,3 +30,12 @@ Los laboratorios están en **archivos MD dedicados**: objetivo por paso, comprob
 | 8 | [Routing](08-routing.md) | [8.1 React Router](08-01-lab-react-router.md) |
 | 9 | [APIs](09-consumo-apis.md) | [9.1 Fetch](09-01-lab-consumo-api.md) |
 | 10 | [Organización](10-organizacion-buenas-practicas.md) | — |
+
+## Proyectos de código en el repositorio
+
+| Carpeta | Qué es |
+|---------|--------|
+| [`calculadora-reducer/`](calculadora-reducer/) | Calculadora **Vite + React + TypeScript** con **`useReducer`**, botonera declarativa (`TECLADO.map`). Encaja con los labs **7.5 y 7.6** (useReducer). |
+| [`demo-laboratorios-7/`](demo-laboratorios-7/) | Una sola app con los ejemplos del **capítulo 7** (Context, HOC, useReducer, hooks). |
+
+En cada carpeta: `npm install` y `npm run dev`.

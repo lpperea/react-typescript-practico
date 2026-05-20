@@ -1,0 +1,135 @@
+.app {
+  min-height: 100vh;
+  padding: clamp(1rem, 4vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background: radial-gradient(
+    ellipse 120% 80% at 50% -20%,
+    #334155,
+    #0f172a 55%
+  );
+  color: #e2e8f0;
+}
+
+.cabecera {
+  text-align: center;
+}
+
+.cabecera h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.subtitulo {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+  color: #94a3b8;
+}
+
+.subtitulo code {
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: #1e293b;
+  color: #7dd3fc;
+  font-size: 0.88em;
+}
+
+.calculadora {
+  width: min(100%, 320px);
+  padding: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #1e293b, #0f172a);
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.pantalla {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.75rem;
+  padding: 0.65rem 0.85rem;
+  min-height: 3rem;
+  border-radius: 10px;
+  background: #020617;
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  font-size: 1.75rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: #f8fafc;
+  line-height: 1.3;
+  word-break: break-all;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.45rem;
+}
+
+.hueco {
+  visibility: hidden;
+  min-height: 48px;
+  pointer-events: none;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.btn {
+  min-height: 48px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #334155;
+  color: #f1f5f9;
+  transition:
+    background 0.12s ease,
+    transform 0.08s ease;
+}
+
+.btn:hover {
+  background: #475569;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-secundario {
+  background: #64748b;
+  color: #fff;
+}
+
+.btn-secundario:hover {
+  background: #78859b;
+}
+
+.btn-operador {
+  background: #0ea5e9;
+  color: #0c4a6e;
+}
+
+.btn-operador:hover {
+  background: #38bdf8;
+}
+
+.btn-igual {
+  grid-row: span 2;
+  background: #22c55e;
+  color: #052e16;
+  min-height: auto;
+}
+
+.btn-igual:hover {
+  background: #4ade80;
+}
